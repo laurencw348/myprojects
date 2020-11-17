@@ -1,0 +1,27 @@
+"*":
+  core:
+    disabledPackages: [
+      "markdown-preview",
+      "php-server",
+      "cornell-info2300"
+    ]
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+  "atom-html-preview":
+    scrollToCursor: true
+  "color-picker":
+    preferredFormat: "HEX"
+  "cornell-info1300": {}
+  "markdown-preview-plus":
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnChange: true
+      syncPreviewOnEditorScroll: true
+    useGitHubStyle: true
+  "tree-view":
+    autoReveal: true
+    hideVcsIgnoredFiles: false
