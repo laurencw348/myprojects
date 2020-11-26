@@ -65,14 +65,14 @@ For this form, I will need the following pieces of data:
 > For each piece of data you plan to collect from the users, identify an appropriate HTML component to collect that data and decide the validation criteria (e.g. whether this data is _required_). Briefly explain your reasoning for the component choice and the validation criteria.
 
 - Name (required): text field; `<input type="text">`
-  - This input type is required because I will need to be able to address the student when I send them an email to verify that I will be able to tutor them in the course
-- Email (required): email field
-  - This input is required because I will need to be able to contact the student
-- Requested course title (required); <input type="text">
-  - Required because I need to this information in order to actually prepare the course for the student
-- Brief description of the materials covered in the course (optional)
-  - This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet 
-- Approx how many hours of tuition a week the student will need: (optional)
+  - This input type is required because I will need to know who I am providing this service for
+- Email (required): email field; `<input type="email">`
+  - This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
+- Requested course title (required); `<input type="text">`
+  - Required because I need to this minimal information in order to actually prepare the course for the student
+- Brief description of the materials covered in the course (optional); `<input type="text">`
+  - This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet
+- Approx how many hours of tuition a week the student will need: (optional);
 
 
 ## Form Location (Milestone 1)
