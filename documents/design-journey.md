@@ -26,18 +26,21 @@ the clients that I intend to reach.  My other target audience will be **parents 
 ## Audience's Needs (Milestone 1)
 > List the audience's needs that you identified in Project 1 or 2. Just list each need. No need to include the "Design Ideas and Choices", etc. You may adjust the needs if necessary. However, any changes you make to the needs for this project should be clearly identified and justified.
 
-- TODO: Need 1
-- TODO: Need 2
-- TODO: ...
-- ...
+- Need 1: Background information about me to get a sense of my personality and academic acheivements
+- Need 2: In depth explanation of the courses I offer
+- Need 3: An explanation of how my tutoring caters perfectly to each students academic needs
+- Need 4: An understanding of how good I am at tutoring
+- Need 5: Prices for each of the courses I teach
+- Need 6: The ability to contact me with questions or feedback
+
 
 
 ## HTML Form + User Needs Brainstorming (Milestone 1)
 > Using the audience needs you identified, brainstorm possible options for an HTML form for the site. List each idea and provide a brief rationale for how the HTML form addresses that need.
 
-- The first possible option for a HTML form for this site is a feedback form that asks users about their experience with having me as a tutor. Since the form would be anonoymous, this would allow users to provide me with constructive feedback such that I can improve my teaching/tutoring style. This addresses the needs of my users
-- The second possible option for a HTML form is
-- The third possible option for a HTML form is a new subject request form which will allow users to request a new subject that they would like me to provide tuition for.
+- The first possible option for a HTML form for this site is a feedback form that asks users about their experience with having me as a tutor. This would address Need 1, since the form allows students to provide me with anonoymous constructive feedback such that I can improve my teaching/tutoring style.
+- The second possible option for a HTML form is a inquiry form
+- The third possible option for a HTML form is a new subject request form which will allow users to request a new subject that they would like me to provide tuition for. This addresses need 4, since the form gives potential students an opportunity to get tutoring that perfectly caters to their academic needs.
 
 
 ## HTML Form Proposal & Rationale (Milestone 1)
@@ -45,7 +48,6 @@ the clients that I intend to reach.  My other target audience will be **parents 
 > Note: If your form is a contact form, we expect to see a thorough justification explaining how a contact form addresses the user's _actual_ needs. In your justification explain how a contact form better suits the needs of your user compared to the alternatives (e.g. sending you an email using your email address).
 
 Form Proposal: The form I will be designing for my personal tutoring website (project 1) is a new subject request form. The form will ask users what the subject is titled, a brief description of what is taught in the class, what kinds of materials they would like me to provide, how many hours a week they will expect to be tutored for this subject, and their current grade for the subject (if applicable).
-
 User Needs Rational: Since one of the main needs for my target audience of high school students is to provide them with best quality tutoring that caters to their academic needs and requirements, the form will allow me to tailor my courses and teaching to exactly match what their academic needs are.
 
 
@@ -64,21 +66,22 @@ For this form, I will need the following pieces of data:
 ## Form Components & Validation Criteria (Milestone 1)
 > For each piece of data you plan to collect from the users, identify an appropriate HTML component to collect that data and decide the validation criteria (e.g. whether this data is _required_). Briefly explain your reasoning for the component choice and the validation criteria.
 
-- Name (required): text field; `<input type="text">`
-  - This input type is required because I will need to know who I am providing this service for
-- Email (required): email field; `<input type="email">`
-  - This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
-- Requested course title (required); `<input type="text">`
-  - Required because I need to this minimal information in order to actually prepare the course for the student
-- Brief description of the materials covered in the course (optional); `<input type="text">`
-  - This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet
-- Approx how many hours of tuition a week the student will need: (optional);
+- **Name (required)**: text field; `<input type="text">`
+  - I chose this component because since the users name should not include any line breaks, if the user enters line breaks this component type removes the breaks before sending the data to the server. This input type is required because I will need to know who I am providing this service for.
+- **Email (required)**: email field; `<input type="email">`
+  - I chose this component because since it automatically validates to ensure that it is either empty or a properly formatted email address, it will ensure that the users types in an appropriate email.  This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
+- **Requested course title (required)**; `<input type="text">`
+  - This component is the most appripriate because the course title should be only 1 line and should not contain any line breaks. Required because I need to this minimal information in order to actually prepare the course for the student
+- **Brief description of the materials covered in the course (optional)**; `<input type="<textarea>`
+  - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet
+- **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="<number>`
+  - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value.
 
 
 ## Form Location (Milestone 1)
 > Which HTML file will you place your form?
 
-TODO (index.html)
+TODO (contactme.html)
 
 > Sketch the location of the form in that page. This sketch need not be fancy. You don't need to provide many details of the page or form. Just plan the location of the form on the page and communicate that to us. You can literally have a box that says "FORM HERE."
 
@@ -120,12 +123,12 @@ TODO
 ## Form Implementation Planning (Milestone 1)
 > What submission method will your form use? GET or POST. Explain your reasoning.
 
-TODO
+I will be using post, since the data includes sensentive information
 
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
 - `method="TODO"`
-- TODO
+- 'action='
 - ...
 
 
