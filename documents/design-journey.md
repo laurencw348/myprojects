@@ -39,7 +39,7 @@ the clients that I intend to reach.  My other target audience will be **parents 
 > Using the audience needs you identified, brainstorm possible options for an HTML form for the site. List each idea and provide a brief rationale for how the HTML form addresses that need.
 
 - The first possible option for a HTML form for this site is a feedback form that asks users about their experience with having me as a tutor. This would address Need 1, since the form allows students to provide me with anonoymous constructive feedback such that I can improve my teaching/tutoring style.
-- The second possible option for a HTML form is a inquiry form
+- The second possible option for a HTML form is a subcription form that allows users to subcribe to my newsletter and blog posts. This addresses need 1 and need 2, since subscribing to my news letter and blog posts will allow users to get even more information delivered to their email about me and about updates to my services.
 - The third possible option for a HTML form is a new subject request form which will allow users to request a new subject that they would like me to provide tuition for. This addresses need 4, since the form gives potential students an opportunity to get tutoring that perfectly caters to their academic needs.
 
 
@@ -73,7 +73,7 @@ For this form, I will need the following pieces of data:
 - **Requested course title (required)**; `<input type="text">`
   - This component is the most appripriate because the course title should be only 1 line and should not contain any line breaks. Required because I need to this minimal information in order to actually prepare the course for the student
 - **Brief description of the materials covered in the course (optional)**; `<input type="<textarea>`
-  - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet
+  - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yethb
 - **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="<number>`
   - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value. This value is optional because some users may not have any idea how many hours of tuition they may need for this new class, especially if they haven't started the course yet.
 
@@ -128,8 +128,14 @@ I will be using post, since the data includes sensentive information
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
 - `method="TODO"`
-- 'action='
-- ...
+- `action=https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php`
+- `novalidate`
+-`input type="text"`
+-`input type="textarea"`
+-`input type="email"`
+-`input type="number"`
+-
+
 
 
 ## Additional Information (Milestone 1)
@@ -141,9 +147,27 @@ TODO
 ## Plan Validation Pseudocode (Final Submission)
 > Write your form validation pseudocode here.
 
-```
-TODO
-```
+When form is submitted:
+if name data is valid:
+  hide name feedback
+else:
+  show name feedback
+
+if email is valid:
+  hide email feedback
+else:
+  show email feedback
+
+if requested course title data is valid:
+  hide requested course title feedback
+else:
+  show requested course title feedback
+
+if form data is valid:
+  send data to server
+else:
+  prevent form from sending data to server
+
 
 
 ## Additional Design Justifications (Final Submission)
