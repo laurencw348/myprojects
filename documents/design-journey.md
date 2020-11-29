@@ -75,13 +75,13 @@ For this form, I will need the following pieces of data:
 - **Brief description of the materials covered in the course (optional)**; `<input type="<textarea>`
   - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yet
 - **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="<number>`
-  - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value.
+  - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value. This value is optional because some users may not have any idea how many hours of tuition they may need for this new class, especially if they haven't started the course yet.
 
 
 ## Form Location (Milestone 1)
 > Which HTML file will you place your form?
 
-TODO (contactme.html)
+TODO (new-subject-request.html)
 
 > Sketch the location of the form in that page. This sketch need not be fancy. You don't need to provide many details of the page or form. Just plan the location of the form on the page and communicate that to us. You can literally have a box that says "FORM HERE."
 
