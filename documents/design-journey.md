@@ -87,8 +87,6 @@ TODO (new-subject-request.html)
 
 **Desktop Location**
 
-TODO
-
 
 **Mobile Location**
 
@@ -100,8 +98,13 @@ TODO
 
 **Desktop Sketches**
 
-TODO
+![Desktop Sketch 1](desktop1.jpg)
+This was the first sketch of the desktop version of my form. In this initial sketch, I wanted to keep the form very professional and simplistic, since this is the overall theme of my website. However, after some contemplation, I realized that my audiences might be confused by the 'Name' label and accidentally think that it is asking for the name of the new subject, instead of their name. Therefore, I decided to make another sketch.
 
+![Desktop Sketch 2](desktop2.jpg)
+The first thing I wanted to do while making this next sketch was to make it clear to my users that the name and email labels are referring to their personal information. The first way I thought of doing this was to create 2 seperate boxes, each with a heading on top of the box that specifies that the content in the first box is the users personal information, and the content in the second box is the course information. While I thought this sketch definitely made things clearer for my audiences than the first sketch, I was still not quite satisfied with this sketch, and wanted to find a better way to make this clear to users.
+
+![Desktop Sketch 3](desktop3.jpg)
 **Mobile Sketches**
 
 TODO
@@ -127,7 +130,7 @@ I will be using post, since the data includes sensentive information
 
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
-- `method="TODO"`
+- `method="post"`
 - `action=https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php`
 - `novalidate`
 -`input type="text"`
