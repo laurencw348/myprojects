@@ -102,13 +102,18 @@ TODO
 This was the first sketch of the desktop version of my form. In this initial sketch, I wanted to keep the form very professional and simplistic, since this is the overall theme of my website. However, after some contemplation, I realized that my audiences might be confused by the 'Name' label and accidentally think that it is asking for the name of the new subject, instead of their name. Therefore, I decided to make another sketch.
 
 ![Desktop Sketch 2](desktop2.jpg)
-The first thing I wanted to do while making this next sketch was to make it clear to my users that the name and email labels are referring to their personal information. The first way I thought of doing this was to create 2 seperate boxes, each with a heading on top of the box that specifies that the content in the first box is the users personal information, and the content in the second box is the course information. While I thought this sketch definitely made things clearer for my audiences than the first sketch, I was still not quite satisfied with this sketch, and wanted to find a better way to make this clear to users.
-
+The first thing I wanted to do while making this next sketch was to make it clear to my users that the name and email labels are referring to their personal information. The first way I thought of doing this was to create 2 seperate boxes, each with a heading on top of the box that specifies that the content in the first box is the users personal information, and the content in the second box is the course information. While I thought this sketch definitely made things clearer for my audiences than the first sketch, I was still not quite satisfied with this sketch, and wanted to find a better way to seperate the two sections. While browsing through the text book, I came across the fieldset element, which is used to group related components together. I therefore decided this would be a great way for me to group together the personal information and course information components of my form.
 ![Desktop Sketch 3](desktop3.jpg)
+I therefore sketched the design of my form using fieldsets. While I definitely think that this design makes the most sense for my target audience, I then realised that it might still be confusing for some my users exactly what I mean by course title and course description. While I first thought that maybe I could write a short description underneath each label to specify exactly what I want users to put into these fields, I then realised a better option would be to use placeholder content so that users have an idea of what should go into each box.
+
+
+![Desktop Sketch 4](desktop4.jpg)
+ This is the final sketch I made for the desktop version of my form, which now includes placeholder data. While I was sketching this form, I also realised that having 'submit' as the label for the submit button didn't quite make the most sense, since this is a request form. I therefore also changed the button label to 'Submit Request'. In addition, I also realised that since the title of the form is 'New Subject Request Form', I should change the labels from 'Course Title' and 'Course Description' to 'Subject Title' and 'Subject Description'. These changes are reflected in this sketch.
 **Mobile Sketches**
-
-TODO
-
+![Mobile Sketch 1](mobile1.jpg)
+Once I finalized the desktop sketch, I made this sketch for the mobile version of my form. My first idea was the simply use the exact same layout and format as the desktop version . However, after browsing some mobile websites with forms, I realised that most forms have the label on top of the input box on the mobile version, to make better use of the vertical space. I therefore decided to change the design of my mobile form, as seen in sketch 2.
+![Mobile Sketch 2](mobile2.jpg)
+In this second sketch of my mobile form, the labels are directly on top of the input boxes to make better use of the vertical space.
 
 ## Form Feedback Design (Milestone 1)
 > Include sketches of your **mobile and desktop** with _corrective feedback_. Show us the evolution of your design and the alternatives you considered.
@@ -126,25 +131,29 @@ TODO
 ## Form Implementation Planning (Milestone 1)
 > What submission method will your form use? GET or POST. Explain your reasoning.
 
-I will be using post, since the data includes sensentive information
+I will be using post, since the data includes sensentive information (name and email).
 
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
 - `method="post"`
 - `action=https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php`
 - `novalidate`
--`input type="text"`
--`input type="textarea"`
--`input type="email"`
--`input type="number"`
--
-
-
+-`<input type="text" name="name" id="users-name" placeholder="John Doe" required/>`
+-`<label for="users-name">Name:</label>`
+-`<input type="email" name="email" id="users-email" placeholder="johndoe@example.com" required/>`
+-`<label for="users-email">Email:</label>`
+-`<input type="text" name="course-name" id="course-name" placeholder="Plant Herbology" required/>`
+-`<label for="course-name">Course Name:</label>`
+-`<input type="textarea" name="course-description id="course-description" placeholder="In this course, we cover the following topics..."/>`
+-`<label for="course-name">Course Description:</label>`
+-`<input type="number" name="number-hours id="number-hours"/>`
+-`<label for="number-hours">Approx. Number of Hours Required per Week:</label>`
+-`<input id="submit-request" type="submit" value="Submit Request"/>`
 
 ## Additional Information (Milestone 1)
 > (optional) Include any additional information, justifications, or comments we should be aware of.
 
-TODO
+N/A
 
 
 ## Plan Validation Pseudocode (Final Submission)
@@ -161,10 +170,10 @@ if email is valid:
 else:
   show email feedback
 
-if requested course title data is valid:
-  hide requested course title feedback
+if requested subject title data is valid:
+  hide requested subject title feedback
 else:
-  show requested course title feedback
+  show requested subject title feedback
 
 if form data is valid:
   send data to server
