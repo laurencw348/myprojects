@@ -72,9 +72,9 @@ For this form, I will need the following pieces of data:
   - I chose this component because since it automatically validates to ensure that it is either empty or a properly formatted email address, it will ensure that the users types in an appropriate email.  This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
 - **Requested course title (required)**; `<input type="text">`
   - This component is the most appripriate because the course title should be only 1 line and should not contain any line breaks. Required because I need to this minimal information in order to actually prepare the course for the student
-- **Brief description of the materials covered in the course (optional)**; `<input type="<textarea>`
+- **Brief description of the materials covered in the course (optional)**; `<textarea>`
   - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yethb
-- **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="<number>`
+- **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="number">`
   - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value. This value is optional because some users may not have any idea how many hours of tuition they may need for this new class, especially if they haven't started the course yet.
 
 
@@ -86,10 +86,10 @@ TODO (new-subject-request.html)
 > Sketch the location of the form in that page. This sketch need not be fancy. You don't need to provide many details of the page or form. Just plan the location of the form on the page and communicate that to us. You can literally have a box that says "FORM HERE."
 
 **Desktop Location**
-
+![Desktop Location](desktoppalce.jpg)
 
 **Mobile Location**
-
+![Mobile Location](mobileplace.jpg)
 TODO
 
 
@@ -119,13 +119,20 @@ In this second sketch of my mobile form, the labels are directly on top of the i
 > Include sketches of your **mobile and desktop** with _corrective feedback_. Show us the evolution of your design and the alternatives you considered.
 
 **Desktop Feedback**
+![Desktop Feedback V1](desktopfeedback1.jpg)
+This is the first design for the desktop version of my form with corrective feedback.
+Since I decided to change the mobile version such that the error messages appear below each input box, I decided to also change this on the desktop version in order to keep iot more consistent. This is seen in my second sketch below.
+![Desktop feedback v2](desktopfeedback2.jpg)
 
-TODO
+
 
 
 **Mobile Feedback**
 
-TODO
+![Mobile Feedback version 1](mobilefeedback1.jpg)
+This is the first design for the mobile version of my form with corrective feedback.
+Although it makes sense for the feedback messages to be above the input boxes, since the labels are also above the boxes, I realized that users may have to use the vertical scroll feature to see the feedback messages. Therefore, to make better use of the vertical space, I decided to try placing the feedback messages below each input box, as seen in the second sketch below.
+![Mobile Feedback version 2](mobilefeedback2.jpg)
 
 
 ## Form Implementation Planning (Milestone 1)
@@ -138,16 +145,22 @@ I will be using post, since the data includes sensentive information (name and e
 - `method="post"`
 - `action=https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php`
 - `novalidate`
+- `<fieldset>`
+- `<legend>Your Information</legend>`
 -`<input type="text" name="name" id="users-name" placeholder="John Doe" required/>`
 -`<label for="users-name">Name:</label>`
 -`<input type="email" name="email" id="users-email" placeholder="johndoe@example.com" required/>`
 -`<label for="users-email">Email:</label>`
+-`</fieldset>`
+-`<fieldset>`
+-`<legend>Subject Information</legend>`
 -`<input type="text" name="course-name" id="course-name" placeholder="Plant Herbology" required/>`
 -`<label for="course-name">Course Name:</label>`
--`<input type="textarea" name="course-description id="course-description" placeholder="In this course, we cover the following topics..."/>`
--`<label for="course-name">Course Description:</label>`
--`<input type="number" name="number-hours id="number-hours"/>`
+-`<textarea name="course-description id="course-description" placeholder="In this course, we cover the following topics..." </textarea>`
+-`<label for="course-description">Course Description:</label>`
+-`<input type="number" name="number-hours id="number-hours" min=1 max=20/>`
 -`<label for="number-hours">Approx. Number of Hours Required per Week:</label>`
+-`</fieldset>`
 -`<input id="submit-request" type="submit" value="Submit Request"/>`
 
 ## Additional Information (Milestone 1)
