@@ -69,11 +69,11 @@ For this form, I will need the following pieces of data:
 - **Name (required)**: text field; `<input type="text">`
   - I chose this component because since the users name should not include any line breaks, if the user enters line breaks this component type removes the breaks before sending the data to the server. This input type is required because I will need to know who I am providing this service for.
 - **Email (required)**: email field; `<input type="email">`
-  - I chose this component because since it automatically validates to ensure that it is either empty or a properly formatted email address, it will ensure that the users types in an appropriate email.  This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
+  - I chose this component because I want to user to enter an email address into this field.  This input is required because I will need to be able to contact the student to let them know whether I will be able to provide the course or not
 - **Requested course title (required)**; `<input type="text">`
   - This component is the most appripriate because the course title should be only 1 line and should not contain any line breaks. Required because I need to this minimal information in order to actually prepare the course for the student
 - **Brief description of the materials covered in the course (optional)**; `<textarea>`
-  - I chose this component because the user might need to provide a lot of text that includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yethb
+  - I chose this component because when describing the course, the user might need to provide a sizeable amount of free-form text includes line breaks. This input is not required because some students may not have a lot of information about the course yet. For example, if a student expects to be taking that class in the following semester, they won't know what materials are covered in the course yethb
 - **Approx how many hours of tuition a week the student will need: (optional)**; `<input type="number">`
   - This component is the most appripriate because I want to contrain the users input such that they can only enter a numerical value. This value is optional because some users may not have any idea how many hours of tuition they may need for this new class, especially if they haven't started the course yet.
 
@@ -108,7 +108,8 @@ I therefore sketched the design of my form using fieldsets. While I definitely t
 
 
 ![Desktop Sketch 4](desktop4.jpg)
- This is the final sketch I made for the desktop version of my form, which now includes placeholder data. While I was sketching this form, I also realised that having 'submit' as the label for the submit button didn't quite make the most sense, since this is a request form. I therefore also changed the button label to 'Submit Request'. In addition, I also realised that since the title of the form is 'New Subject Request Form', I should change the labels from 'Course Title' and 'Course Description' to 'Subject Title' and 'Subject Description'. These changes are reflected in this sketch.
+ This is the final sketch I made for the desktop version of my form, which now includes placeholder data. While I was sketching this form, I also realised that having 'submit' as the label for the submit button didn't quite make the most sense, since this is a request form. I therefore also changed the button label to 'Submit Request'. In addition, I also realised that since the title of the form is 'New Subject Request Form', I should change the labels from 'Course Title' and 'Course Description' to 'Subject Title' and 'Subject Description'. These changes are reflected in this sketch above.
+
 **Mobile Sketches**
 ![Mobile Sketch 1](mobile1.jpg)
 Once I finalized the desktop sketch, I made this sketch for the mobile version of my form. My first idea was the simply use the exact same layout and format as the desktop version . However, after browsing some mobile websites with forms, I realised that most forms have the label on top of the input box on the mobile version, to make better use of the vertical space. I therefore decided to change the design of my mobile form, as seen in sketch 2.
@@ -121,7 +122,7 @@ In this second sketch of my mobile form, the labels are directly on top of the i
 **Desktop Feedback**
 ![Desktop Feedback V1](desktopfeedback1.jpg)
 This is the first design for the desktop version of my form with corrective feedback.
-Since I decided to change the mobile version such that the error messages appear below each input box, I decided to also change this on the desktop version in order to keep iot more consistent. This is seen in my second sketch below.
+Since I decided to change the mobile version such that the error messages appear below each input box, I decided to also change this on the desktop version in order to keep it consistent. This is seen in my second sketch below.
 ![Desktop feedback v2](desktopfeedback2.jpg)
 
 
@@ -172,26 +173,6 @@ N/A
 ## Plan Validation Pseudocode (Final Submission)
 > Write your form validation pseudocode here.
 
-When form is submitted:
-if name data is valid:
-  hide name feedback
-else:
-  show name feedback
-
-if email is valid:
-  hide email feedback
-else:
-  show email feedback
-
-if requested subject title data is valid:
-  hide requested subject title feedback
-else:
-  show requested subject title feedback
-
-if form data is valid:
-  send data to server
-else:
-  prevent form from sending data to server
 
 
 
