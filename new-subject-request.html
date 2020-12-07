@@ -20,19 +20,40 @@
       </ul>
     </nav>
     <h2>New Subject Request Form</h2>
+    <p> Please use this form to request a new subject</p>
     <form id="request-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+      <fieldset>
+        <legend>Your Information</legend>
+      <div id="name-feedback" class="feedbacks hidden">∗ Please provide your full name.</div>
       <div class="form1">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required/>
       </div>
+
+      <div id="email-feedback" class="feedbacks hidden">∗ Please provide a valid email address.</div>
       <div class="form1">
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required/>
       </div>
+    </fieldset>
+    <fieldset>
+      <legend>New Subject Information</legend>
+      <div id="title-feedback" class="feedbacks hidden">∗ Please provide the requested subject  title.</div>
+      <div class="form1">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title"/>
+      </div>
+
+      <div class="form1">
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" placeholder="In this course, we cover the following topics..." rows="5" cols="33"></textarea>
+      </div>
+
       <div class="form1">
         <label for="hours">Approx Number of Hours:</label>
         <input type="number" name="hours" id="hours"/>
       </div>
+    </fieldset>
       <div class="submitbutton">
         <input id="submit" type="submit" value="Submit Request"/>
       </div>

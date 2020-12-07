@@ -82,3 +82,52 @@ nav a{
 .hidden{
   display: none;
 }
+
+.form1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px;
+  width: 450px;
+  padding: 15px;
+}
+
+.request-form{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+}
+
+.form1 label, input {
+  display: inline-block;
+}
+
+fieldset{
+  margin: 20px;
+  padding: 25px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend{
+  font-size: 150%
+}
+
+label {
+  width: 100px;
+  text-align: left;
+}
+
+input{
+  width: 300px;
+}
+
+.submit button{
+  align-self:flex-end;
+}
+
+.feedback{
+
+}
