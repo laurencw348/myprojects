@@ -122,6 +122,10 @@ input{
   display: block;
 }
 
+input number{
+  width: 50px;
+}
+
 
 button{
   display: block;
@@ -142,11 +146,6 @@ button{
 .hidden{
   display: none;
 }
-
-
-
-
-
 
 @media (max-width: 600px) {
 
