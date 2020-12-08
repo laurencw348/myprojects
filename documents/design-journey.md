@@ -173,6 +173,26 @@ N/A
 ## Plan Validation Pseudocode (Final Submission)
 > Write your form validation pseudocode here.
 
+When form is submitted:
+if name data is valid:
+  hide name feedback
+else:
+  show name feedback
+
+if email is valid:
+  hide email feedback
+else:
+  show email feedback
+
+if requested subject title data is valid:
+  hide requested subject title feedback
+else:
+  show requested subject title feedback
+
+if form data is valid:
+  send data to server
+else:
+  prevent form from sending data to server
 
 
 
