@@ -1,3 +1,6 @@
+*{
+  font-size: 15px;
+}
 body {
   background-color: #ffffff;
   color: black;
@@ -8,6 +11,7 @@ body {
 h1, h2, h3, h4 {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
+  font-size: 30px;
   color: #0b3c6a;
 }
 h1,h2 {
@@ -79,13 +83,19 @@ nav a{
   margin-right: auto;
 }
 
+.form-desc{
+  font-size: 20px;
+  text-align: center;
+}
 
 .form1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 10px 0;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px
 
 
 }
@@ -100,10 +110,12 @@ nav a{
 }
 
 
+
 fieldset{
-  margin: 20px;
-  padding: 25px;
-  width: 500px;
+  margin: 50px;
+  padding: 35px;
+  padding-bottom: 60px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -115,23 +127,28 @@ legend{
 label {
   width: 100px;
   text-align: left;
+  font-size: 17px;
 }
 
-input{
+input, textarea{
   width: 280px;
   display: block;
 }
 
-input number{
-  width: 50px;
+.hours{
+  width: 30px;
 }
 
 
 button{
-  display: block;
-  margin-top: 16px;
-  margin-left: auto;
-  align-self: flex-end;
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+
+}
+
+placeholder{
+  font-family: sans-serif;
 }
 
 
@@ -139,7 +156,8 @@ button{
   color: #ff0000;
   display: block;
   margin-top: 0px;
-  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 15px;
   margin-left: 95px;
 }
 
@@ -150,17 +168,42 @@ button{
 @media (max-width: 600px) {
 
   .form1 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 10px 0;
-    padding-bottom: 20px;}
+      display: flex;
+      flex-direction: column;
+      margin: 16px 0;
+      margin-bottom: 0px;
+    }
+
+  label{
+    margin-left: 45px;
+    align-self: flex-start;
+    margin-top: 0px;
+    align-items: flex-start;
+    display: inline;
+    }
 
   fieldset{
     width: 100%;
     align-self: center;}
 
-  label{
-    align-items: flex-start;
+  textarea{
+    margin-left: 33px;
   }
+
+  .feedbacks{
+    margin-left: 45px;
+    margin-bottom: 0px;
   }
+
+  .hours{
+    display: inline-block;
+    margin-left: 45px;
+    align-self: flex-start;
+  }
+
+  .hourstitle{
+    width: 300px
+  }
+
+
+}
