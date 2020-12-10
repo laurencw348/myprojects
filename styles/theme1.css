@@ -95,21 +95,7 @@ nav a{
   margin: 10px 0;
   padding-top: 15px;
   padding-bottom: 0px;
-  margin-bottom: 0px
-
-
-}
-
-.request-form{
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  margin: 150px;
-  padding: 50px;
-
-}
-
-
+  margin-bottom: 0px}
 
 fieldset{
   margin: 50px;
@@ -140,12 +126,17 @@ input, textarea{
 }
 
 
-button{
-    display: block;
-    margin-top: 16px;
-    margin-left: auto;
-
+.submitbutton{
+  display: flex;
+  justify-content:flex-end;
+  text-align: center;
 }
+
+input[type=submit]{
+  width: 140px;
+  margin-right: 210px;
+}
+
 
 placeholder{
   font-family: sans-serif;
@@ -168,10 +159,9 @@ placeholder{
 @media (max-width: 600px) {
 
   .form1 {
-      display: flex;
-      flex-direction: column;
-      margin: 16px 0;
-      margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
     }
 
   label{
@@ -183,12 +173,11 @@ placeholder{
     }
 
   fieldset{
-    width: 100%;
-    align-self: center;}
+    max-width: 100%;
+    align-self: center;
+    padding: 20px;
+    padding-top: 0px;}
 
-  textarea{
-    margin-left: 33px;
-  }
 
   .feedbacks{
     margin-left: 45px;
@@ -205,5 +194,12 @@ placeholder{
     width: 300px
   }
 
+  input[type=submit]{
+    margin-right: 0px;
+    padding-right: 0px;
+  }
 
+.submitbutton{
+  margin-right: 0px;
+  padding-right: 0px}
 }

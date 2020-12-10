@@ -205,14 +205,12 @@ TODO
 ## Self-Reflection (Final Submission)
 > This was the first project in this class where you coded some JavaScript. What did you learn from this experience?
 
-TODO
-
+From learning JavaScript, I've learned that the best way to become very familiar and comfortable with a programming language is to practice! When the language was first introduced to us, I found it very confusing. When we first started to practice implementing JS code, it was very difficult for me to understand how it worked and how the snippets of code fit together. However, after we got a lot of practice using JS in lab 10, I became much more confident in how to properly use JS, such that coding the JS for my project took much less time than I had initially anticipated it would.
 
 > Reflect on how HTML, CSS, and JavaScript together support client-side interactivity. If it's helpful, you can describe your mental model of client-side interactivity or explain how the general idea of showing and hiding content can be used to implement other forms of client-side interactivity beyond form validation and feedback.
-
-TODO
+HTML, CSS and JavaScript are all equally important when it comes to client side interactivity. The HTML provides the structure of the form and the CSS provides the style/design of the form, the JavaScipt layer provides the actual 'interactivity' layer. This means that the content or styling dynamically changes in response to the users behavior.
 
 
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
 
-TODO
+Before taking this class, even though it was of interesting, I knew virtually nothing about the process of designing and coding websites. Throughout the course of this semester, I've managed to learn 3 new programming languages, and at this stage I feel very confident in my ability to design and code a fully functioning and well designed website. Natually, I feel the most confident in my HTML and CSS abilities, purely because I have gained the most experience using these languages during this semester. Each time we have a new project or lab, I find that I am able to write the CSS and HTML faster and faster: something I'm very happy about. While at the beginning of the semester, I found myself having to constantly ask for help from the TA's or my peers, now I find that I am able to figure out the solutions to my problems by myself without much or4 any outside help.
