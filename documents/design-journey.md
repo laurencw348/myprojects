@@ -174,6 +174,7 @@ N/A
 > Write your form validation pseudocode here.
 
 When form is submitted:
+
 if name data is valid:
   hide name feedback
 else:
@@ -199,7 +200,7 @@ else:
 ## Additional Design Justifications (Final Submission)
 > If you feel like you haven’t fully explained your design choices in the final submission, or you want to explain some functions in your site (e.g., if you feel like you make a special design choice which might not meet the final requirement), you can use the additional design justifications to justify your design choices. Remember, this is place for you to justify your design choices which you haven’t covered in the design journey. Use it wisely. However, you don’t need to fill out this section if you think all design choices have been well explained in the final submission design journey.
 
-TODO
+As specified in my project 1 design journey, the main design goals for this audience was to create professional, polished clean looking website. This design is most appropriate for my target audiences, as I want these potential clients to see me as a professional and well qualitifed expert. For this reason, I have used a very minimalistic and simple design for my form in order to convey a sense of provessionalism to my audience, as well as to ensure that the form design is consistent with the design of the rest of the website.
 
 
 ## Self-Reflection (Final Submission)
