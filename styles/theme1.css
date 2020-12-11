@@ -128,13 +128,16 @@ input, textarea{
 
 .submitbutton{
   display: flex;
-  justify-content:flex-end;
-  text-align: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type=submit]{
   width: 140px;
-  margin-right: 210px;
+  align-self:flex-end;
+  margin-right: 100px;
+
 }
 
 
@@ -154,6 +157,13 @@ placeholder{
 
 .hidden{
   display: none;
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+
+  input[type=submit]{
+    margin-right: 0px;}
+
 }
 
 @media (max-width: 600px) {
@@ -196,10 +206,5 @@ placeholder{
 
   input[type=submit]{
     margin-right: 0px;
-    padding-right: 0px;
-  }
-
-.submitbutton{
-  margin-right: 0px;
-  padding-right: 0px}
+    padding-right: 0px;}
 }
